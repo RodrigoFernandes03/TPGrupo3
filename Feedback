@@ -5,4 +5,4 @@ class AvaliacaoProduto(models.Model):
     comentario = models.TextField()
 
     def __str__(self):
-        return f"{self.produto_avaliado} - Avaliação: {self.avaliacao}"
+        return str (self.produto_avaliado)
