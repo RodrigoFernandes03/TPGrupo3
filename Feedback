@@ -1,1 +1,8 @@
+class AvaliacaoProduto(models.Model):
+    id_avaliacao = models.BigAutoField(primary_key=True)
+    produto_avaliado = models.CharField(max_length=150)
+    avaliacao = models.IntegerField()
+    comentario = models.TextField()
 
+    def __str__(self):
+        return f"{self.produto_avaliado} - Avaliação: {self.avaliacao}"
