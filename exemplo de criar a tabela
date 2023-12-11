@@ -1,0 +1,7 @@
+class funcionarios(models.Model):
+    id_funcionarios = models.BigAutoField(primary_key=True)
+    nome_funcionarios = models.CharField(max_length=150)
+    funcao_funcionarios = models.CharField(max_length=200)
+    
+def __str__(self):
+    return str (self.nome_funcionario)
