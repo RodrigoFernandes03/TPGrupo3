@@ -5,4 +5,4 @@ class Despesas(models.Model):
     data = models.DateField()
 
     def __str__(self):
-        return f"{self.descricao} - Valor: {self.valor}"
+        return str (self.descriçao)
