@@ -1,0 +1,8 @@
+class Stock(models.Model):
+    id_STOCK = models.BigAutoField(primary_key=True)
+    Produto_Em_Stock = models.IntergField(max_length=150)
+    Quantidade_De_Produtos_Em_Stock = models.IntergField(max_length=200)
+    Quantidade_De_Produtos_Em_Falta_No_Stock = models.IntergField(max_length=200)
+   
+def __str__(self):
+    return str (self.nome_Produto_Em_Stock)
