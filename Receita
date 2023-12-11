@@ -1,1 +1,8 @@
-
+class Receita(models.Model):
+    id_RECEITA = models.BigAutoField(primary_key=True)
+    Produto_Em_Receita = models.CharField(max_length=150)
+    Quantidade_De_Produtos_Necessarios = models.IntegerField(max_length=200)
+    Metodo_De_Preparacao = models.TextField()
+   
+    def __str__(self):
+        return str(self.Produto_Em_Receita)
